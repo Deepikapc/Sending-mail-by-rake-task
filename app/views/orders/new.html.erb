@@ -1,0 +1,10 @@
+<h2>Creating Orders</h2>
+<%= form_for @order do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %><br/><br/>
+	<%= f.label :email %>
+	<%= f.text_field :email %><br/><br/>
+	<%= f.label :status %>
+	<%= f.text_field :status %><br/><br/>
+	<%= f.submit %>
+<% end %>

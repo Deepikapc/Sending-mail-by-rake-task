@@ -1,0 +1,19 @@
+<h2>List of orders(<%= @orders.length %>)</h2>
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Email</th>
+		<th>status</th>
+	</thead>
+	<tbody>
+		<% @orders.each do |order| %>
+		<tr>
+			<td><%=order.name %></td>
+			<td><%=order.email %></td>
+			<td><%=order.status %></td>
+		</tr>	
+		<% end %>
+	</tbody>
+</table>
+<br/>
+<%= link_to "Add New Orders", new_order_path%>
